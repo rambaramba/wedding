@@ -4,16 +4,14 @@ import { Divider } from "antd";
 import styled from "styled-components";
 
 import GalleryPhoto1 from "../assets/1SY02154+.jpg";
-import GalleryPhoto2 from "../assets/Gallery_Photo_2.webp";
-import GalleryPhoto3 from "../assets/Gallery_Photo_3.webp";
-import GalleryPhoto4 from "../assets/Gallery_Photo_4.webp";
-import GalleryPhoto5 from "../assets/Gallery_Photo_5.webp";
-import GalleryPhoto6 from "../assets/Gallery_Photo_6.webp";
-import GalleryPhoto2 from "../assets/Gallery_Photo_2.webp";
-import GalleryPhoto3 from "../assets/Gallery_Photo_3.webp";
-import GalleryPhoto4 from "../assets/Gallery_Photo_4.webp";
-import GalleryPhoto5 from "../assets/Gallery_Photo_5.webp";
-import GalleryPhoto6 from "../assets/Gallery_Photo_6.webp";
+import GalleryPhoto2 from "../assets/1SY00256.jpg";
+import GalleryPhoto3 from "../assets/1SY00681.jpg";
+import GalleryPhoto4 from "../assets/1SY00903.jpg";
+import GalleryPhoto5 from "../assets/1SY01124+.jpg";
+import GalleryPhoto6 from "../assets/1SY01418+.jpg";
+import GalleryPhoto2 from "../assets/a1SY00548.jpg";
+import GalleryPhoto3 from "../assets/AM4I7612.jpg";
+import GalleryPhoto4 from "../assets/ba1SY01458.jpg";
 
 
 
