@@ -28,7 +28,7 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-family: "nanum_dahang"  !important;
+  font-family: "nanum_lefthand"  !important;
   font-size: 1.5 rem;
   line-height: 1.75;
   opacity: 0.75;
@@ -39,7 +39,7 @@ const Content = styled.p`
 
 const GroomBride = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 1.1 rem;
+  font-size: 2 rem;
   line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 0px;
@@ -78,6 +78,7 @@ const Greeting = () => {
         <br />
         <br />
         더 할 나위 없는 기쁨이겠습니다.
+        <br />
         <br />
         <br />        
       </Content>
