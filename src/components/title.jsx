@@ -19,6 +19,7 @@ const TitleWrapper = styled.div`
   width: 100%;
   text-align: center;
   padding-top: 42px;
+  font-family: "nanum_hipi";
   font-weight: 500 !important;
   color: var(--title-color);
   animation: fadein 3s;
@@ -39,6 +40,7 @@ const WeddingInvitation = styled.p`
 
 const GroomBride = styled.p`
   font-size: 2.0rem;
+  font-family: "nanum_hipi";
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;

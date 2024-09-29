@@ -25,6 +25,7 @@ const Image = styled.img`
 `;
 
 const Content = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;

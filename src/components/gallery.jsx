@@ -22,6 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
+  font-family: "nanum_hipi";
   font-size: 1rem;
   color: var(--title-color);
   font-weight: bold;
@@ -73,7 +74,7 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>우리의 아름다운 순간</Title>
+        <Title>아름다운 순간</Title>
       </Divider>
       <ImageGallery
         showPlayButton={false}
