@@ -29,7 +29,7 @@ const TitleWrapper = styled.div`
 `;
 
 const VideoBackground = styled.video`
-  width: 120%;
+  width: 150%;
   height: 50%;
 `;
 
@@ -48,8 +48,10 @@ const GroomBride = styled.p`
 `;
 
 const Schedule = styled.p`
+
+  text-align: center;
   font-family: "nanum_hipi";
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   opacity: 0.65;
   margin-bottom: 24px;
 `;
@@ -62,17 +64,22 @@ const Title = () => {
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
-        🤵🏻{GROOM_NAME}&#38;{BRIDE_NAME}👰🏻‍♀️
+          🤵🏻{GROOM_NAME}&#38;{BRIDE_NAME}👰🏻‍♀️
         </GroomBride>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
+    <TitleWrapper>
+      <br />
+      <br />
+      <br />
       <Schedule>
-          {WEDDING_DATE}
-          <br />
-          {WEDDING_LOCATION}
-        </Schedule>
+        {WEDDING_DATE}
+        <br />
+        {WEDDING_LOCATION}
+      </Schedule>
+        </TitleWrapper>
     </Layout>
   );
 };
