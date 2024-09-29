@@ -31,7 +31,7 @@ const Content = styled.p`
   line-height: 1.75;
   opacity: 0.75;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding-top: 42px;
   padding-bottom: 42px;
   margin: 0;
@@ -107,8 +107,7 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-
-      <Title> 🍎 상세 주소</Title>
+      <Title>  💒 상세 주소</Title>
         <br />
         <br />
            서울 송파구 법원로9길 26 H비지니스파크 D동 그레이스홀
@@ -117,7 +116,7 @@ const Location = () => {
         <br />
         <br />
 
-        <Title> 🍎 셔틀버스 이용시</Title>
+        <Title> 🚍 셔틀버스 이용시</Title>
         <br />
         <br />
            8호선 문정역 4번출구 앞 셔틀버스 10분 배차 운행
@@ -125,7 +124,8 @@ const Location = () => {
         <br />
         <br />
         <br />
-        <Title> 🍎 버스 이용시(문정로데오 거리 하차)</Title>
+
+        <Title> 🚌 버스 이용시(문정로데오 거리 하차)</Title>
         <br />
         <br />
           • 일반버스(초록) : 30, 31, 32, 331, 100, 119
