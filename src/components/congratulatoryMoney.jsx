@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -90,9 +90,9 @@ const CongratulatoryMoney = () => {
         plain
         style={{ marginTop: 0, marginBottom: 32 }}
       >
-        <Title>축하의 마음을 전하세요</Title>
+        <Title> 마음 전하실 곳</Title>
       </Divider>
-      <Image src={Flower} />
+      
       <Content data-aos="fade-up">
         
       </Content>
