@@ -18,8 +18,8 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-family: "nanum_hipi";
-  font-size: 1rem;
+  font-family: "nanum_hipi" !important;
+  font-size: 1.5rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -28,8 +28,8 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-family: "nanum_hipi";
-  font-size: 0.72rem;
+  font-family: "nanum_dahang"  !important;
+  font-size: 1rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
@@ -38,8 +38,8 @@ const Content = styled.p`
 `;
 
 const GroomBride = styled.p`
-  font-family: "nanum_hipi";
-  font-size: 0.875rem;
+  font-family: "nanum_hipi" !important;
+  font-size: 1.5 rem;
   line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 0px;

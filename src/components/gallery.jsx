@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-family: "nanum_hipi";
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -74,7 +74,7 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>덕&램 photo</Title>
+        <Title> 순간의 기록 </Title>
       </Divider>
       <ImageGallery
         showPlayButton={false}
