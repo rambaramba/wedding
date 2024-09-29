@@ -26,10 +26,10 @@ const Title = styled.span`
 `;
 
 const LinkShareButton = styled(Button)`
+  font-family: "nanum_hipi" !important; 
   background-color: rgba(217, 125, 131, 0.2);
   border-color: rgba(217, 125, 131, 0.2) !important;
   color: var(--title-color) !important;
-  font-family: "nanum_hipi" !important;
   font-weight: 400 !important;
   align-item: center;
   width: 100%;
