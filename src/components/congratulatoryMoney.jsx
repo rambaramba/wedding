@@ -92,7 +92,7 @@ const CongratulatoryMoney = () => {
       </Divider>
       <Image src={Flower} />
       <Content data-aos="fade-up">
-        축하의 마음을 담아 축의금을 전달해 보세요.
+        
       </Content>
 
       <ButtonWrap>
