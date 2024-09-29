@@ -31,12 +31,9 @@ const Content = styled.p`
   line-height: 1.75;
   opacity: 0.75;
   width: 100%;
-  
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 50%;
-
   padding-top: 42px;
   padding-bottom: 42px;
   margin: 0;
