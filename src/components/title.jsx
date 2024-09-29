@@ -30,6 +30,7 @@ const TitleWrapper = styled.div`
 
 const VideoBackground = styled.video`
   width: 100%;
+  height: 50%;
 `;
 
 const WeddingInvitation = styled.p`
@@ -52,6 +53,9 @@ const Schedule = styled.p`
   opacity: 0.65;
   margin-bottom: 24px;
 `;
+
+
+
 const Title = () => {
   return (
     <Layout>
