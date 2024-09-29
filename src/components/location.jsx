@@ -30,9 +30,8 @@ const Content = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  text-align: left;
-  margin: 0 auto !important;
-  width: 50% !important;
+  text-align: center;
+  width: 100% !important;
   padding-top: 42px;
   padding-bottom: 42px;
   margin: 0;
