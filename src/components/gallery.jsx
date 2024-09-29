@@ -74,7 +74,7 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>아름다운 순간</Title>
+        <Title>덕&램 photo</Title>
       </Divider>
       <ImageGallery
         showPlayButton={false}
