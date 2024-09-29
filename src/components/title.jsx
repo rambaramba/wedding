@@ -47,6 +47,7 @@ const GroomBride = styled.p`
 `;
 
 const Schedule = styled.p`
+  font-family: "nanum_hipi";
   font-size: 1.06rem;
   opacity: 0.65;
   margin-bottom: 24px;
