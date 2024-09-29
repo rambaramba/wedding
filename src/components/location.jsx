@@ -47,14 +47,16 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+      "timestamp" : "1727627480215",
+      "key" : "2krum",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
   };
+
+
 
   // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
   // document.write 문제가 발생해서 해당 파일을 직접 가져온다음 수정했음
@@ -103,26 +105,43 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        서울 송파구 법원로9길 26 H비지니스파크 D동
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
-        <br />
-        <br />
-        <Title>버스 이용시</Title>
+        그레이스홀
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
-        <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
-        <br />
-        <br />
-        <Title>지하철 이용시</Title>
+        
+        <Title>셔틀버스 이용시</Title>
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        8호선 문정역 4번출구 앞 셔틀버스 10분 배차 운행
+        <br />
+        <br />
+        
+        <Title>버스 이용시(문정로데오 거리 하차)</Title>
+        <br />
+        <br />
+        일반버스(초록) : 30, 31, 32, 331, 100, 119
+        <br />
+        간선버스(파랑) : 302, 303, 320, 333, 343, 345, 350, 360
+        <br />
+        지선버스(초록) : 3420 • 광역버스(빨강) : 9403
+        <br />
+        직행좌석버스(빨강) : 500-1, 1009, 1112, 1117, 1650, 3302, G2100
+        <br />
+        <br />
+        <Title>자가용 이용시</Title>
+        <br />
+        <br />
+        네비게이션 이용시 : "루이비스컨벤션" 또는 "주소" 입력
+        <br />
+        웨딩홀 건물(H비지니스파크) 내 A, B동 C, D동 B1~B4층 1300여 대 주차가능
       </Content>
     </Wrapper>
   );
 };
 
 export default Location;
+
+
+
