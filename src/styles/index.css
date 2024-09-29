@@ -61,10 +61,15 @@
 
 /* 폰트 적용 */
 @font-face {
-  font-family: "nanum";
+  font-family: "nanum_sungsil";
   src: url("../assets/fonts/mom_to_daughter.woff2") format("woff2"),
     url("../assets/fonts/mom_to_daughter.woff") format("woff"),
-    url("../assets/fonts/nanum.ttf") format("ttf"),
+    url("../assets/fonts/nanum_dahang.ttf") format("ttf"),
+    url("../assets/fonts/nanum_hipi.ttf") format("ttf"),
+    url("../assets/fonts/nanum_dahang.ttf") format("ttf"),
+    url("../assets/fonts/nanum_lefthand.ttf") format("ttf"),
+    url("../assets/fonts/nanum_sungsil.ttf") format("ttf"),
+
     ;
   font-weight: normal;
   font-style: normal;
