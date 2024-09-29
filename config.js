@@ -3,7 +3,7 @@ export const KAKAOTALK_API_TOKEN = "02c02d785ede652e7363ecd8d41e6051";
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
-export const WEDDING_DATE = "2024년 11월 16일, 토요일 오후 2시 00분";
+export const WEDDING_DATE = "2024년 11월 16일, 토요일 오후 2시";
 export const WEDDING_LOCATION = "루이비스컨벤션 송파문정 그레이스홀";
 
 export const GROOM_NAME = "권덕근";
