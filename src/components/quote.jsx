@@ -17,7 +17,7 @@ const Content = styled.span`
   display: block;
   margin: 0 auto;
   font-size: 1.3rem;
-  font-family: "mom_to_daughter";
+  font-family: "nanum_lefthand";
   text-align: center;
   color: var(--title-color);
   line-height: 2.25rem;
@@ -39,14 +39,16 @@ const Quote = () => {
     <Wrapper>
       <Image src={Flower} data-aos="fade-up" />
       <Content data-aos="fade-up">
-        장담하건대. 세상이 다 겨울이어도
+        사랑한다는 말은 설레고 
         <br />
-        우리 사랑은 늘봄처럼 따뜻하고
+        포옹은 따뜻하고
         <br />
-        간혹, 여름처럼 뜨거울 겁니다
+        하늘은 파랗고
+        <br />
+        당신은 소중하다
         <br />
         <br />
-        - 이수동, (사랑가) -
+        - 김은주, (기분을 만지다) -
         <br />
         <br />
       </Content>
