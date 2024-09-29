@@ -29,7 +29,7 @@ const Title = styled.p`
 
 const Content = styled.p`
   font-family: "nanum_lefthand"  !important;
-  font-size: 1.5 rem;
+  font-size: 1.3 rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
@@ -83,7 +83,7 @@ const Greeting = () => {
         <br />        
       </Content>
       <GroomBride data-aos="fade-up">
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 차남 {GROOM_NAME}
+        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 남 {GROOM_NAME}
         <br />
         {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
       </GroomBride>
