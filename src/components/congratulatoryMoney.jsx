@@ -44,6 +44,7 @@ const Content = styled.p`
 
 const SubContent = styled.p`
   font-size: 0.875rem;
+  font-family: "nanum_sungsil";
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 42px;

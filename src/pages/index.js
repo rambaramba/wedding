@@ -64,7 +64,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Jeong Baraem
+        Copyright © 2024 Jeong Baraem
       </Footer>
     </Wrapper>
   );
