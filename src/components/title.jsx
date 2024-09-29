@@ -29,7 +29,7 @@ const TitleWrapper = styled.div`
 `;
 
 const VideoBackground = styled.video`
-  width: 100%;
+  width: 120%;
   height: 50%;
 `;
 
@@ -64,15 +64,15 @@ const Title = () => {
         <GroomBride>
         🤵🏻{GROOM_NAME}&#38;{BRIDE_NAME}👰🏻‍♀️
         </GroomBride>
-        <Schedule>
-          {WEDDING_DATE}
-          <br />
-          {WEDDING_LOCATION}
-        </Schedule>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
+      <Schedule>
+          {WEDDING_DATE}
+          <br />
+          {WEDDING_LOCATION}
+        </Schedule>
     </Layout>
   );
 };
