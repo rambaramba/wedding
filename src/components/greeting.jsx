@@ -59,19 +59,24 @@ const Greeting = () => {
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
-        서로 마주 보며 다져온 사랑을
+        함께하면 모든 것이 즐거워지는 사람과
         <br />
         <br />
-        이제 함께 한곳을 바라보며 걸어갈 수 있는
+        하나 되어 미래를 같이하기로 약속했습니다.
         <br />
         <br />
-        큰 사랑으로 키우고자 합니다.
+        각자의 일상을 존중하고 보듬어주며 살아가겠습니다.
         <br />
         <br />
-        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게
+        곁에서 늘 아껴주신 여러분들이,
         <br />
         <br />
-        앞날을 축복해 주시면 감사하겠습니다.
+        저희의 새로운 시작을 축복해 주시면 
+        <br />
+        <br />
+        더 할 나위 없는 기쁨이겠습니다.
+        <br />
+        <br />        
       </Content>
       <GroomBride data-aos="fade-up">
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
