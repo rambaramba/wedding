@@ -36,6 +36,7 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
@@ -44,13 +45,14 @@ const Content = styled.p`
 
 const SubContent = styled.p`
   font-size: 0.875rem;
-  font-family: "nanum_sungsil";
+  font-family: "nanum_hipi";
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 42px;
 `;
 
 const Description = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.65;
