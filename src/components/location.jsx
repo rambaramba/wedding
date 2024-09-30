@@ -49,8 +49,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-      "timestamp" : "1727627480215",
-      "key" : "2krum",
+      "timestamp" : "1727682526326",
+      "key" : "2ks6f",
       "mapWidth" : "640",
       "mapHeight" : "360"
   }).render();`);
@@ -58,6 +58,8 @@ const Location = () => {
     document.body.appendChild(scriptTag);
   };
 
+
+  
 
 
   // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
@@ -81,7 +83,8 @@ const Location = () => {
         "//t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/" +
         a +
         "/roughmapLander.js";
-
+      
+      b = "https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
       // document.write -> doumnet.body.append로 수정
       const scriptTag = document.createElement("script");
       scriptTag.src = b;
