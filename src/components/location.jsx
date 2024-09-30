@@ -47,27 +47,15 @@ const Location = () => {
 
   // <!-- 3. 실행 스크립트 -->
   const executeScript = () => {
-    const scriptTag = `
-      <script charset="UTF-8">
-        new daum.roughmap.Lander({
-          "timestamp" : "1727682526326",
-          "key" : "2ks6f",
-          "mapWidth" : "640",
-          "mapHeight" : "360"
-        }).render();
-      </script>
-    `
+    const scriptTag = document.createElement("script");
+    const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
+      "timestamp" : "1727682526326",
+      "key" : "2ks6f",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
+  }).render();`);
+    scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
-
-  //   const scriptTag = document.createElement("script");
-  //   const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-  //     "timestamp" : "1727682526326",
-  //     "key" : "2ks6f",
-  //     "mapWidth" : "640",
-  //     "mapHeight" : "360"
-  // }).render();`);
-  //   scriptTag.appendChild(inlineScript);
-  //   document.body.appendChild(scriptTag);
   };
 
 
