@@ -79,7 +79,7 @@ const Title = () => {
         <br />
         {WEDDING_LOCATION}
       </Schedule>
-        </TitleWrapper>
+    </TitleWrapper>
     </Layout>
   );
 };
