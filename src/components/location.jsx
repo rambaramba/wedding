@@ -83,8 +83,6 @@ const Location = () => {
         "//t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/" +
         a +
         "/roughmapLander.js";
-      
-      b = "https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
       // document.write -> doumnet.body.append로 수정
       const scriptTag = document.createElement("script");
       scriptTag.src = b;
@@ -107,7 +105,7 @@ const Location = () => {
       <Image src={Flower} />
       <Map
         id="daumRoughmapContainer1727682526326" 
-        class="root_daum_roughmap root_daum_roughmap_landing"
+        className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
       <Title>  💒 상세 주소</Title>

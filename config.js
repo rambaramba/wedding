@@ -1,4 +1,5 @@
-export const WEDDING_INVITATION_URL = "http://localhost:8000/";
+// export const WEDDING_INVITATION_URL = "http://localhost:8000/";
+export const WEDDING_INVITATION_URL = "https://wedding-invitation--ramduck.netlify.app/";
 export const KAKAOTALK_API_TOKEN = "02c02d785ede652e7363ecd8d41e6051";
 export const KAKAOTALK_SHARE_IMAGE = "src/images/ring_image.png";
 export const WEDDING_DATE = "2024년 11월 16일, 토요일 오후 2시";
