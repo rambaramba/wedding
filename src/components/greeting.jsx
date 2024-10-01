@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 1.3 rem;
+  font-size: 2<br />rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
