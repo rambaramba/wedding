@@ -30,11 +30,11 @@ const Content = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  text-align: center;
-  width: 100% !important;
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
   padding-top: 42px;
   padding-bottom: 42px;
-  margin: 0;
 `;
 
 const Map = styled.div`
