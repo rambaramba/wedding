@@ -75,7 +75,6 @@ const Title = () => {
       </VideoBackground>
     <TitleWrapper>
       <br />
-      <br />
       <Schedule>
         {WEDDING_DATE}
         <br />
