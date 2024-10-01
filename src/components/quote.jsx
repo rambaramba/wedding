@@ -19,6 +19,7 @@ const Content = styled.span`
   font-size: 1.3rem;
   font-family: "mom_to_daughter" !important;
   text-align: center;
+  font-weight: bold;
   color: var(--title-color);
   line-height: 2.25rem;
   opacity: 0.75;
