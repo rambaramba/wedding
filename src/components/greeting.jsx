@@ -39,7 +39,7 @@ const Content = styled.p`
 
 const GroomBride = styled.p`
   font-family: "mom_to_daughter" !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 0px;
