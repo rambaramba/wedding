@@ -41,7 +41,7 @@ const WeddingInvitation = styled.p`
 
 const GroomBride = styled.p`
   font-size: 2.0rem;
-  font-family: "nanum_sungsil";
+  font-family: "mom_to_daughter";
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;
