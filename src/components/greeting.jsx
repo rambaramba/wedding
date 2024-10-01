@@ -39,7 +39,7 @@ const Content = styled.p`
 
 const GroomBride = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 2 rem;
+  font-size: 3rem;
   line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 0px;
