@@ -38,7 +38,7 @@ const Content = styled.p`
 `;
 
 const GroomBride = styled.p`
-  font-family: "nanum_hipi" !important;
+  font-family: "mom_to_daughter" !important;
   font-size: 2rem;
   line-height: 1.75;
   opacity: 0.85;
