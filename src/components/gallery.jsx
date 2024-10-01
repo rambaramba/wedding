@@ -48,10 +48,6 @@ const images = [
     thumbnail: GalleryPhoto1,
   },
   {
-    original: GalleryPhoto2,
-    thumbnail: GalleryPhoto2,
-  },
-  {
     original: GalleryPhoto3,
     thumbnail: GalleryPhoto3,
   },
