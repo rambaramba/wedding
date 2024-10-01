@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 2<br />rem;
+  font-size: 2rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -39,7 +39,7 @@ const Content = styled.p`
 
 const GroomBride = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 0px;
