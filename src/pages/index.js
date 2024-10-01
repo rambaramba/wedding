@@ -31,7 +31,7 @@ const IndexPage = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    script.src = "https://developers.kakao.com/sdk/js/kakao.min.js";
+    script.src = "https://https://github.com/rambaramba";
     document.body.appendChild(script);
 
     return () => {
@@ -64,7 +64,7 @@ const IndexPage = () => {
           textAlign: "center",
         }}
       >
-        Copyright © 2022 Shin Jooyoung
+        Copyright © 2024 Jeong Baraem
       </Footer>
     </Wrapper>
   );

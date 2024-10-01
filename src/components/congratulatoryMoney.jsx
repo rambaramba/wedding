@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -36,6 +36,7 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
@@ -44,12 +45,14 @@ const Content = styled.p`
 
 const SubContent = styled.p`
   font-size: 0.875rem;
+  font-family: "nanum_hipi";
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 42px;
 `;
 
 const Description = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.65;
@@ -87,11 +90,11 @@ const CongratulatoryMoney = () => {
         plain
         style={{ marginTop: 0, marginBottom: 32 }}
       >
-        <Title>축하의 마음을 전하세요</Title>
+        <Title> 마음 전하실 곳</Title>
       </Divider>
-      <Image src={Flower} />
+      
       <Content data-aos="fade-up">
-        축하의 마음을 담아 축의금을 전달해 보세요.
+        
       </Content>
 
       <ButtonWrap>

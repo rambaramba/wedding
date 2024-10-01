@@ -10,7 +10,8 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: 1rem;
+  font-family: "nanum_hipi";
+  font-size: 1.3rem ;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -25,14 +26,15 @@ const Image = styled.img`
 `;
 
 const Content = styled.p`
+  font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  width: 100%;
-  text-align: center;
+  text-align: left;
+  margin: 0 auto;
+  width: 8mom_to_daughter0%;
   padding-top: 42px;
   padding-bottom: 42px;
-  margin: 0;
 `;
 
 const Map = styled.div`
@@ -47,8 +49,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-      "timestamp" : "1727627480215",
-      "key" : "2krum",
+      "timestamp" : "1727682526326",
+      "key" : "2ks6f",
       "mapWidth" : "640",
       "mapHeight" : "360"
   }).render();`);
@@ -56,6 +58,8 @@ const Location = () => {
     document.body.appendChild(scriptTag);
   };
 
+
+  
 
 
   // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
@@ -79,7 +83,6 @@ const Location = () => {
         "//t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/" +
         a +
         "/roughmapLander.js";
-
       // document.write -> doumnet.body.append로 수정
       const scriptTag = document.createElement("script");
       scriptTag.src = b;
@@ -101,41 +104,42 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1727682526326" 
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        서울 송파구 법원로9길 26 H비지니스파크 D동
+      <Title>  💒 상세 주소</Title>
         <br />
-        그레이스홀
-        <br />
-        <br />
-        
-        <Title>셔틀버스 이용시</Title>
+           서울 송파구 법원로9길 26 
+        <br />   
+           H비지니스파크 D동 그레이스홀
         <br />
         <br />
-        8호선 문정역 4번출구 앞 셔틀버스 10분 배차 운행
+        <br />
+
+        <Title> 🚍 셔틀버스 이용시</Title>
+        <br />
+           8호선 문정역 4번출구 앞 셔틀버스 10분 배차
         <br />
         <br />
-        
-        <Title>버스 이용시(문정로데오 거리 하차)</Title>
+        <br />
+
+        <Title> 🚌 버스 이용시</Title>
+        <br />
+        문정로데오거리 하차
+        <br />
+          • 일반버스(초록) : 30, 31, 32, 331, 100, 119    
+        <br />
+          • 간선버스(파랑) : 302, 303, 320, 333, 343
+        <br />
+          • 지선버스(초록) : 3420  
+        <br />    
+          • 광역버스(빨강) : 9403
+        <br />
+          • 직행좌석버스 : 500-1, 1009, 1112, 1117, 1650
         <br />
         <br />
-        일반버스(초록) : 30, 31, 32, 331, 100, 119
         <br />
-        간선버스(파랑) : 302, 303, 320, 333, 343, 345, 350, 360
-        <br />
-        지선버스(초록) : 3420 • 광역버스(빨강) : 9403
-        <br />
-        직행좌석버스(빨강) : 500-1, 1009, 1112, 1117, 1650, 3302, G2100
-        <br />
-        <br />
-        <Title>자가용 이용시</Title>
-        <br />
-        <br />
-        네비게이션 이용시 : "루이비스컨벤션" 또는 "주소" 입력
-        <br />
-        웨딩홀 건물(H비지니스파크) 내 A, B동 C, D동 B1~B4층 1300여 대 주차가능
       </Content>
     </Wrapper>
   );
