@@ -66,13 +66,14 @@ const Title = () => {
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
           🤵🏻{GROOM_NAME} &#38; {BRIDE_NAME}👰🏻‍♀️
+          <br />
+          <br />
         </GroomBride>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
     <TitleWrapper>
-      <br />
       <br />
       <br />
       <Schedule>
