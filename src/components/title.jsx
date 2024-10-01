@@ -19,7 +19,7 @@ const TitleWrapper = styled.div`
   width: 100%;
   text-align: center;
   padding-top: 42px;
-  font-family: "nanum_hipi";
+  font-family: "nanum_dahang";
   font-weight: 500 !important;
   color: var(--title-color);
   animation: fadein 3s;
