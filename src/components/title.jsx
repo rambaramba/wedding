@@ -50,7 +50,7 @@ const GroomBride = styled.p`
 const Schedule = styled.p`
 
   text-align: center;
-  font-family: "nanum_sungsil";
+  font-family: "mom_to_daughter";
   font-size: 1.2rem;
   opacity: 0.65;
   margin-bottom: 24px;
