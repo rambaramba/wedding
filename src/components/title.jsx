@@ -51,7 +51,7 @@ const Schedule = styled.p`
 
   text-align: center;
   font-family: "nanum_sungsil";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: 0.65;
   margin-bottom: 24px;
 `;
