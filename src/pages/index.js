@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color:  rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 0.6); /* 연핑크 색상에 투명도 추가 */
+  background-color:  rgba(227, 161, 161, 0.6); /* 연핑크 색상에 투명도 추가 */
   color: #777; /* 회색 텍스트 */
   font-family: "nanum_dahang";
   border: none;
@@ -39,11 +39,11 @@ const Buttons = styled.button`
   margin-left: 10px; /* 왼쪽에서 띄우기 */
 
   &:hover {
-    background-color: rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 8);  /* 호버 시 조금 더 진한 핑크색 */
+    background-color: rgba(227, 161, 161, 1);  /* 호버 시 조금 더 진한 핑크색 */
   }
 
   &:active {
-    background-color: rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 8); /* 클릭 시 핑크색 */
+    background-color: rgba(227, 161, 161, 1); /* 클릭 시 핑크색 */
     transform: scale(0.95); /* 클릭 효과 */
   }
 `;
