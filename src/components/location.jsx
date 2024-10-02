@@ -37,7 +37,7 @@ const Image = styled.img`
 
 const Content = styled.p`
   font-family: "nanum_hipi";
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.75;
   opacity: 0.75;
   text-align: left;
@@ -129,8 +129,9 @@ const Location = () => {
 
         <Title2> 🚍 셔틀버스 이용시</Title2>
         <br />
-           8호선 문정역 4번출구 앞 셔틀버스 10분 배차
+          • 8호선 문정역 하차
         <br />
+          • 4번출구 앞 셔틀버스 탑승 (10분 간격 배차)
         <br />
         <br />
 
