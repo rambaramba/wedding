@@ -87,7 +87,6 @@ const CongratulatoryMoney = () => {
 
   return (
     <Wrapper>
-      <Image src={Flower} data-aos="fade-up" />      
       <Divider
         data-aos="fade-up"
         plain
@@ -96,6 +95,8 @@ const CongratulatoryMoney = () => {
         <Title> 마음 전하실 곳</Title>
       </Divider>
       
+      <Image src={Flower} data-aos="fade-up" />      
+
       <Content data-aos="fade-up">
         
       </Content>
