@@ -63,7 +63,7 @@ const Title = () => {
 
   useEffect(() => {
     const today = new Date();
-    const weddingDate = new Date(WEDDING_DATE);
+    const weddingDate = new Date(Date.parse(WEDDING_DATE));
     const diffTime = weddingDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 3600 * 24));
     setDday(diffDays);
