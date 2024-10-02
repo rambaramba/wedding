@@ -57,6 +57,14 @@ const Schedule = styled.p`
   margin-bottom: 24px;
 `;
 
+const Schedule2 = styled.p`
+  text-align: center;
+  font-family: "mom_to_daughter";
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 0.65;
+  margin-bottom: 24px;
+`;
 
 
 const Title = () => {
@@ -83,10 +91,9 @@ const Title = () => {
       </VideoBackground>
       <TitleWrapper>
         <Schedule>{WEDDING_DATE}</Schedule>
+        <br />
+        <Schedule2> D-day : {dday}   </Schedule2>
       </TitleWrapper>
-      <div>
-        <p>D-day: {dday}</p>
-      </div>
     </Layout>
   );
 };
