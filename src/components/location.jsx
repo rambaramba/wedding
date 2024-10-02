@@ -39,7 +39,7 @@ const Content = styled.p`
   font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 1;
   text-align: left;
   margin: 0 auto;
   width: 100%;

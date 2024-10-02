@@ -31,7 +31,7 @@ const Content = styled.p`
   font-family: "nanum_lefthand"  !important;
   font-size: 1.1 rem;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.9;
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
@@ -42,7 +42,7 @@ const GroomBride = styled.p`
   font-family: "mom_to_daughter" !important;
   font-size: 1.5rem;
   line-height: 1.75;
-  opacity: 0.85;
+  opacity: 1;
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
