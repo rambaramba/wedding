@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect }  from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
