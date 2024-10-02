@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -18,7 +18,6 @@ import Song from "../assets/song.mp3";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// markup
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
@@ -28,33 +27,34 @@ const Wrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://https://github.com/rambaramba";
-    document.body.appendChild(script);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-    return () => {
-      document.body.romoveChile(script);
-    };
-  }, []);
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
 
   useEffect(() => {
     AOS.init({
       duration: 1500,
     });
   });
+
   return (
     <Wrapper>
-      <audio autoPlay loop>
-        <source src={Song} />
-      </audio>
+      <audio
+        src={Song}
+        autoPlay={isPlaying}
+        loop
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
+      <button onClick={togglePlay}>Toggle Play</button>
       <Title />
       <Greeting />
       <Gallery />
       <Location />
-      <CongratulatoryMoney />
       <Quote />
+      <CongratulatoryMoney />
       <Share />
       <Footer
         style={{
