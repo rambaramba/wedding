@@ -1,5 +1,7 @@
-import React, { useState, useEffect }  from "react";
-import {  Layout } from "antd";
+클로바버전
+
+import React, { useState, useEffect } from "react";
+import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
@@ -26,24 +28,20 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-
-const buttons = styled.p`
-  font-size: 2rem;
-  cursor: pointer;
+const Buttons = styled.button`
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
   padding: 10px 20px;
+  cursor: pointer;
 `;
 
-
 const IndexPage = () => {
-  const effectButton = document.getElementById("effectButton");
-  const audio = document.getElementById("audio");
+  const [isPlaying, setIsPlaying] = useState(false);
 
-
-  effectButton.addEventListener("click", ( ) => {
-      effectButton.style.backgroundColor = "red" ;
-      effectButton.style.backgroundColor = "white" ;
-      audio.play()
-  });
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -53,11 +51,15 @@ const IndexPage = () => {
 
   return (
     <Wrapper>
-      <buttons id="effectButton"> song </buttons>
-      <audio autoPlay loop>
-        <source src={Song} />
-      </audio>
-     
+      <audio
+        id="audio"
+        src={Song}
+        autoPlay={isPlaying}
+        loop
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
+      <Buttons id="effectButton" onClick={togglePlay}>Toggle Play</Buttons>
       <Title />
       <Greeting />
       <Gallery />
