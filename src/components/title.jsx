@@ -90,7 +90,11 @@ const Title = () => {
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
       <TitleWrapper>
-        <Schedule>{WEDDING_DATE}</Schedule>
+        <Schedule>
+          {WEDDING_DATE}
+          <br />
+          {WEDDING_LOCATION}
+        </Schedule>
         <br />
         <Schedule2> D-day : {dday}   </Schedule2>
       </TitleWrapper>
