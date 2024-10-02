@@ -42,7 +42,7 @@ const Content = styled.p`
   opacity: 0.75;
   text-align: left;
   margin: 0 auto;
-  width: 8mom_to_daughter0%;
+  width: 80%;
   padding-top: 42px;
   padding-bottom: 42px;
 `;
