@@ -49,8 +49,9 @@ const SubContent = styled.p`
   font-size: 0.875rem;
   color : #777;
   font-family: "nanum_hipi";
+  font-weight: 400;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.8;
   margin-bottom: 30px;
 `;
 
