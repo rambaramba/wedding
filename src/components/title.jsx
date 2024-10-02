@@ -53,9 +53,9 @@ const Schedule = styled.p`
   font-family: "mom_to_daughter";
   font-weight: bold;
   font-size: 1.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 26px;
-  color: #d7d7d7;
+  color: #a9a9a9;
 `;
 
 const Schedule2 = styled.p`
