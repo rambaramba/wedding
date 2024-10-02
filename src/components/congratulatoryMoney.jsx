@@ -4,6 +4,7 @@ import { CheckCircleTwoTone } from "@ant-design/icons";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Flower from "../assets/flower3.png";
+
 import {
   GROOM_NAME,
   GROOM_ACCOUNT_NUMBER,
@@ -41,7 +42,7 @@ const Content = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 `;
 
 const SubContent = styled.p`
@@ -49,7 +50,7 @@ const SubContent = styled.p`
   font-family: "nanum_hipi";
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 `;
 
 const Description = styled.p`
@@ -86,6 +87,7 @@ const CongratulatoryMoney = () => {
 
   return (
     <Wrapper>
+      <Image src={Flower} data-aos="fade-up" />      
       <Divider
         data-aos="fade-up"
         plain
