@@ -30,12 +30,18 @@ const Buttons = styled.button`
   background-color: #f0f0f0;
   color: #333;
   border: none;
-  padding: 10px 20px;
+  border-radius: 50px; /* 타원형으로 만들기 */
+  padding: 10px 30px; /* 패딩 조정 */
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 
   &:hover {
     background-color: #e0e0e0;
+  }
+
+  &:active {
+    background-color: #ff4081; /* 클릭 시 핑크색 */
+    transform: scale(0.95); /* 클릭 효과 */
   }
 `;
 
@@ -68,7 +74,7 @@ const IndexPage = () => {
         onPause={() => setIsPlaying(false)}
       />
       <Buttons onClick={togglePlay}>
-        {isPlaying ? "Pause" : "Play"}
+        {isPlaying ? "소리끄기" : "소리재생"}
       </Buttons>
       <Title />
       <Greeting />
