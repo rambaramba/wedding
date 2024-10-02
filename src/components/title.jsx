@@ -55,6 +55,7 @@ const Schedule = styled.p`
   font-size: 1.5rem;
   opacity: 0.65;
   margin-bottom: 26px;
+  color: #d7d7d7;
 `;
 
 const Schedule2 = styled.p`
