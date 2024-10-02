@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {
   WEDDING_DATE,
   WEDDING_LOCATION,
+  WEDDING_DATE2,
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
@@ -63,7 +64,7 @@ const Title = () => {
 
   useEffect(() => {
     const today = new Date();
-    const weddingDate = new Date(Date.parse(WEDDING_DATE));
+    const weddingDate = new Date(Date.parse(WEDDING_DATE2));
     const diffTime = weddingDate.getTime() - today.getTime();
     const diffDays = Math.ceil(diffTime / (1000 * 3600 * 24));
     setDday(diffDays);
