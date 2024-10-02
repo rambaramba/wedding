@@ -45,6 +45,7 @@ const Content = styled.p`
   width: 100%;
   padding-top: 42px;
   padding-bottom: 42px;
+  color: #a9a9a9;  
 `;
 
 const Map = styled.div`

@@ -35,6 +35,7 @@ const Content = styled.p`
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
+  color: #a9a9a9;
 `;
 
 const GroomBride = styled.p`
@@ -46,6 +47,7 @@ const GroomBride = styled.p`
   width: 100%;
   text-align: center;
   font-weight: bold ;  
+  color: #a9a9a9;
 `;
 
 const Image = styled.img`

@@ -32,6 +32,7 @@ const LinkShareButton = styled(Button)`
   color: var(--title-color) !important;
   font-weight: 400 !important;
   align-item: center;
+  color: #a9a9a9;
   width: 100%;
   &:hover {
     background-color: rgb(217 125 131 / 48%) !important;
