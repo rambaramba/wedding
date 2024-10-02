@@ -12,7 +12,6 @@ import GroovePaper from "../assets/GroovePaper.png";
 import Location from "../components/location";
 import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
-import Quote from "../components/quote";
 import Song from "../assets/song.mp3";
 
 import AOS from "aos";
@@ -35,7 +34,7 @@ const IndexPage = () => {
     document.body.appendChild(script);
 
     return () => {
-      document.body.romoveChile(script);
+      document.body.removeChild(script);
     };
   }, []);
 
@@ -44,10 +43,11 @@ const IndexPage = () => {
       duration: 1500,
     });
   });
+
   return (
     <Wrapper>
-      <audio autoPlay loop>
-        <source src={Song} />
+      <audio autoPlay loop controls>
+        <source src={Song} type="audio/mpeg" />
       </audio>
       <Title />
       <Greeting />
