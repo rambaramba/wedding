@@ -42,6 +42,15 @@ const Title = styled.p`
   text-align: center;
 `;
 
+const Title2 = styled.p`
+  font-family: "nanum_hipi";
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-weight: bold;
+  opacity: 0.85;
+  margin-bottom: 26px;
+  text-align: center;
+`;
 const images = [
   {
     original: GalleryPhoto8,
@@ -136,6 +145,7 @@ const Gallery = () => {
         showFullscreenButton={false}
         items={images}
       />
+        <Title2>   </Title2>
     </Wrapper>
   );
 };
