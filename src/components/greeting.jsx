@@ -31,23 +31,23 @@ const Content = styled.p`
   font-family: "nanum_lefthand"  !important;
   font-size: 1.1 rem;
   line-height: 1.75;
-  opacity: 0.9;
+  opacity: 0.85;
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
-  color: #a9a9a9;
+  color: #777;
 `;
 
 const GroomBride = styled.p`
   font-family: "mom_to_daughter" !important;
   font-size: 1.5rem;
   line-height: 1.75;
-  opacity: 1;
+  opacity: 0.95;
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
   font-weight: bold ;  
-  color: #a9a9a9;
+  color: #777;
 `;
 
 const Image = styled.img`
