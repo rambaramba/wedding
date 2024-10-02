@@ -45,6 +45,7 @@ const GroomBride = styled.p`
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
+  font-weight: 400;  
 `;
 
 const Image = styled.img`
