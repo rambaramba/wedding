@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-size: 1.2rem;
+  font-family: "nanum_hipi" !important;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
