@@ -27,16 +27,17 @@ const Wrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color: #f0f0f0;
+  background-color: #ffb2c1; /* 연핑크 색상 */
   color: #333;
   border: none;
   border-radius: 50px; /* 타원형으로 만들기 */
   padding: 10px 30px; /* 패딩 조정 */
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px; /* 버튼을 아래로 내리기 */
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: #ff9ca1; /* 호버 시 조금 더 진한 핑크색 */
   }
 
   &:active {
@@ -74,7 +75,7 @@ const IndexPage = () => {
         onPause={() => setIsPlaying(false)}
       />
       <Buttons onClick={togglePlay}>
-        {isPlaying ? "소리끄기" : "소리재생"}
+        {isPlaying ? "🎧 OFF" : "🎧 ON"}
       </Buttons>
       <Title />
       <Greeting />
