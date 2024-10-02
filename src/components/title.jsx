@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import {
   WEDDING_DATE,
@@ -56,35 +56,30 @@ const Schedule = styled.p`
   margin-bottom: 24px;
 `;
 
+
+
 const Title = () => {
-  const [dday, setDday] = useState(0);
-
-  useEffect(() => {
-    const today = new Date();
-    const weddingDate = new Date({WEDDING_DATE});
-    const diffTime = weddingDate.getTime() - today.getTime();
-    const diffDays = Math.ceil(diffTime / (1000 * 3600 * 24));
-    setDday(diffDays);
-  }, []);
-
   return (
     <Layout>
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
-          🤵🏻{GROOM_NAME} &amp; {BRIDE_NAME}👰🏻‍♀️
+          🤵🏻{GROOM_NAME} &#38; {BRIDE_NAME}👰🏻‍♀️
           <br />
         </GroomBride>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
-      <TitleWrapper>
-        <Schedule>
-          {dday}일 남았습니다.
-          <br />
-          {WEDDING_DATE}
-          <br />
-          {WEDDING_LOCATION}
-        </Schedule>
-      </TitleWrapper>
+    <TitleWrapper>
+      <Schedule>
+        {WEDDING_DATE}
+        <br />
+        {WEDDING_LOCATION}
+      </Schedule>
+    </TitleWrapper>
+    </Layout>
+  );
+};
+
+export default Title;
