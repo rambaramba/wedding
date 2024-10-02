@@ -61,8 +61,8 @@ const Schedule2 = styled.p`
   text-align: center;
   font-family: "mom_to_daughter";
   font-weight: bold;
-  font-size: 1.5rem;
-  opacity: 0.8;
+  font-size: 1.8rem;
+  opacity: 0.9;
   margin-bottom: 26px;
 `;
 
