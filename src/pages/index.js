@@ -1,5 +1,3 @@
-클로바버전
-
 import React, { useState, useEffect } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
@@ -34,12 +32,23 @@ const Buttons = styled.button`
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
 `;
 
 const IndexPage = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = React.useRef(null);
 
   const togglePlay = () => {
+    if (!isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
     setIsPlaying(!isPlaying);
   };
 
@@ -47,19 +56,20 @@ const IndexPage = () => {
     AOS.init({
       duration: 1500,
     });
-  });
+  }, []);
 
   return (
     <Wrapper>
       <audio
-        id="audio"
+        ref={audioRef}
         src={Song}
-        autoPlay={isPlaying}
         loop
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
-      <Buttons id="effectButton" onClick={togglePlay}>Toggle Play</Buttons>
+      <Buttons onClick={togglePlay}>
+        {isPlaying ? "Pause" : "Play"}
+      </Buttons>
       <Title />
       <Greeting />
       <Gallery />
