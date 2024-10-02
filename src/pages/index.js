@@ -28,13 +28,15 @@ const Wrapper = styled.div`
 
 const Buttons = styled.button`
   background-color: #ffb2c1; /* 연핑크 색상 */
-  color: #333;
+  color: #777; /* 회색 텍스트 */
+  font-family: "mom_to_daughter";
   border: none;
   border-radius: 50px; /* 타원형으로 만들기 */
-  padding: 10px 30px; /* 패딩 조정 */
+  padding: 5px 15px; /* 패딩 조정하여 버튼 크기 줄이기 */
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   margin-top: 20px; /* 버튼을 아래로 내리기 */
+  margin-left: 10px; /* 왼쪽에서 띄우기 */
 
   &:hover {
     background-color: #ff9ca1; /* 호버 시 조금 더 진한 핑크색 */
@@ -75,7 +77,7 @@ const IndexPage = () => {
         onPause={() => setIsPlaying(false)}
       />
       <Buttons onClick={togglePlay}>
-        {isPlaying ? "🎧 OFF" : "🎧 ON"}
+        {isPlaying ?  "🎧 OFF" : "🎧 ON" }
       </Buttons>
       <Title />
       <Greeting />
