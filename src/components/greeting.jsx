@@ -29,7 +29,7 @@ const Title = styled.p`
 
 const Content = styled.p`
   font-family: "nanum_lefthand"  !important;
-  font-size: 1.3 rem;
+  font-size: 1.2 rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
