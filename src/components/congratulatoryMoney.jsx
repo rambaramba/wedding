@@ -78,7 +78,7 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   width: 1.375rem;
-  padding-bottom: 42px;
+  padding-bottom: 24px;
 `;
 
 const CongratulatoryMoney = () => {
@@ -94,8 +94,6 @@ const CongratulatoryMoney = () => {
       >
         <Title> 마음 전하실 곳</Title>
       </Divider>
-      
-      <Image src={Flower} data-aos="fade-up" />      
 
       <Content data-aos="fade-up">
         
