@@ -27,9 +27,9 @@ const Wrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color: #ffb2c1; /* 연핑크 색상 */
+  background-color:  rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 0.6); /* 연핑크 색상에 투명도 추가 */
   color: #777; /* 회색 텍스트 */
-  font-family: "mom_to_daughter";
+  font-family: "nanum_dahang";
   border: none;
   border-radius: 50px; /* 타원형으로 만들기 */
   padding: 5px 15px; /* 패딩 조정하여 버튼 크기 줄이기 */
@@ -39,11 +39,11 @@ const Buttons = styled.button`
   margin-left: 10px; /* 왼쪽에서 띄우기 */
 
   &:hover {
-    background-color: #ff9ca1; /* 호버 시 조금 더 진한 핑크색 */
+    background-color: rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 8);  /* 호버 시 조금 더 진한 핑크색 */
   }
 
   &:active {
-    background-color: #ff4081; /* 클릭 시 핑크색 */
+    background-color: rgba(var(--title-color-r), var(--title-color-g), var(--title-color-b), 8); /* 클릭 시 핑크색 */
     transform: scale(0.95); /* 클릭 효과 */
   }
 `;

@@ -19,7 +19,7 @@ const Layout = styled.div`
 const TitleWrapper = styled.div`
   width: 100%;
   text-align: center;
-  padding-top: 42px;
+  padding-top: 30px;
   font-family: "nanum_dahang";
   font-weight: 500 !important;
   color: var(--title-color);
