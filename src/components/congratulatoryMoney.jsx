@@ -47,6 +47,7 @@ const Content = styled.p`
 
 const SubContent = styled.p`
   font-size: 0.875rem;
+  color : #777;
   font-family: "nanum_hipi";
   line-height: 1.75;
   opacity: 0.75;
