@@ -42,7 +42,7 @@ const Content = styled.p`
   opacity: 0.75;
   text-align: left;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   padding-top: 42px;
   padding-bottom: 42px;
 `;
