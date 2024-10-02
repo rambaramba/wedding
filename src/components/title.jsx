@@ -96,7 +96,7 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
         <br />
-        <Schedule2> D-day 까지 {dday} 일 남았습니다  </Schedule2>
+        <Schedule2> D-day 까지 {dday} 일   </Schedule2>
       </TitleWrapper>
     </Layout>
   );
