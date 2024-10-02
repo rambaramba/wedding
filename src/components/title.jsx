@@ -45,7 +45,7 @@ const GroomBride = styled.p`
   font-family: "mom_to_daughter";
   font-weight: bold;
   opacity: 0.9;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `;
 
 const Schedule = styled.p`
@@ -54,7 +54,7 @@ const Schedule = styled.p`
   font-weight: bold;
   font-size: 1.5rem;
   opacity: 0.65;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 `;
 
 const Schedule2 = styled.p`
@@ -62,8 +62,8 @@ const Schedule2 = styled.p`
   font-family: "mom_to_daughter";
   font-weight: bold;
   font-size: 1.5rem;
-  opacity: 0.65;
-  margin-bottom: 24px;
+  opacity: 0.8;
+  margin-bottom: 26px;
 `;
 
 
