@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from "react";
-import { Layout } from "antd";
+import {  Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
@@ -26,12 +26,24 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const IndexPage = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
 
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
+const buttons = styled.p`
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+`;
+
+
+const IndexPage = () => {
+  const effectButton = document.getElementById("effectButton");
+  const audio = document.getElementById("audio");
+
+
+  effectButton.addEventListener("click", ( ) => {
+      effectButton.style.backgroundColor = "red" ;
+      effectButton.style.backgroundColor = "white" ;
+      audio.play()
+  });
 
   useEffect(() => {
     AOS.init({
@@ -41,14 +53,11 @@ const IndexPage = () => {
 
   return (
     <Wrapper>
-      <audio
-        src={Song}
-        autoPlay={isPlaying}
-        loop
-        onPlay={() => setIsPlaying(true)}
-        onPause={() => setIsPlaying(false)}
-      />
-      <button onClick={togglePlay}>Toggle Play</button>
+      <buttons id="effectButton"> song </buttons>
+      <audio autoPlay loop>
+        <source src={Song} />
+      </audio>
+     
       <Title />
       <Greeting />
       <Gallery />
