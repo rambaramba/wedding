@@ -83,8 +83,8 @@ const IndexPage = () => {
       <Greeting />
       <Gallery />
       <Location />
-      <Quote />
       <CongratulatoryMoney />
+      <Quote />
       <Share />
       <Footer
         style={{
