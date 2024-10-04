@@ -39,11 +39,11 @@ const Buttons = styled.button`
   margin-left: 10px; /* 왼쪽에서 띄우기 */
 
   &:hover {
-    background-color: rgba(227, 161, 161, 1);  /* 호버 시 조금 더 진한 핑크색 */
+    background-color: rgba(227, 161, 161, 0.6);  /* 호버 시 조금 더 진한 핑크색 */
   }
 
   &:active {
-    background-color: rgba(227, 161, 161, 1); /* 클릭 시 핑크색 */
+    background-color: rgba(227, 161, 161, 0.6); /* 클릭 시 핑크색 */
     transform: scale(0.95); /* 클릭 효과 */
   }
 `;
