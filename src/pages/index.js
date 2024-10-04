@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color:  rgba(227, 161, 161, 0.4); /* 연핑크 색상에 투명도 추가 */
+  background-color:  rgba(227, 161, 161, 0.3); /* 연핑크 색상에 투명도 추가 */
   color: #777; /* 회색 텍스트 */
   font-family: "nanum_dahang";
   border: none;
