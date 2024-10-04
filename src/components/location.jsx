@@ -18,6 +18,16 @@ const Title = styled.span`
   margin-bottom: 0;
 `;
 
+const Title2 = styled.span`
+  font-family: "nanum_hipi";
+  font-size: 1.1rem ;
+  color: var(--title-color);
+  font-weight: bold;
+  opacity: 0.85;
+  margin-bottom: 0;
+`;
+
+
 const Image = styled.img`
   display: block;
   margin: 0 auto;
@@ -29,12 +39,13 @@ const Content = styled.p`
   font-family: "nanum_hipi";
   font-size: 0.875rem;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.95;
   text-align: left;
   margin: 0 auto;
-  width: 8mom_to_daughter0%;
+  width: 100%;
   padding-top: 42px;
   padding-bottom: 42px;
+  color: #777;  
 `;
 
 const Map = styled.div`
@@ -108,7 +119,7 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-      <Title>  💒 상세 주소</Title>
+      <Title2>  💒 상세 주소</Title2>
         <br />
            서울 송파구 법원로9길 26 
         <br />   
@@ -117,14 +128,15 @@ const Location = () => {
         <br />
         <br />
 
-        <Title> 🚍 셔틀버스 이용시</Title>
+        <Title2> 🚍 셔틀버스 이용시</Title2>
         <br />
-           8호선 문정역 4번출구 앞 셔틀버스 10분 배차
+          • 8호선 문정역 하차
+        <br />
+          • 4번출구 앞 셔틀버스 탑승 (10분 간격 배차)
         <br />
         <br />
         <br />
-
-        <Title> 🚌 버스 이용시</Title>
+        <Title2> 🚌 버스 이용시</Title2>
         <br />
         문정로데오거리 하차
         <br />
@@ -136,7 +148,7 @@ const Location = () => {
         <br />    
           • 광역버스(빨강) : 9403
         <br />
-          • 직행좌석버스 : 500-1, 1009, 1112, 1117, 1650
+          • 직행좌석버스 : 500-1, 1009, 1112, 1117
         <br />
         <br />
         <br />

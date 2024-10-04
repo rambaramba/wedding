@@ -4,6 +4,7 @@ import { CheckCircleTwoTone } from "@ant-design/icons";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
 import Flower from "../assets/flower3.png";
+
 import {
   GROOM_NAME,
   GROOM_ACCOUNT_NUMBER,
@@ -29,6 +30,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-size: 1.2rem;
+  font-family: "nanum_hipi" !important;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -40,15 +42,17 @@ const Content = styled.p`
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 `;
 
 const SubContent = styled.p`
   font-size: 0.875rem;
+  color : #777;
   font-family: "nanum_hipi";
+  font-weight: 400;
   line-height: 1.75;
-  opacity: 0.75;
-  margin-bottom: 42px;
+  opacity: 0.8;
+  margin-bottom: 30px;
 `;
 
 const Description = styled.p`
@@ -76,7 +80,7 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   width: 1.375rem;
-  padding-bottom: 42px;
+  padding-bottom: 24px;
 `;
 
 const CongratulatoryMoney = () => {
@@ -92,7 +96,7 @@ const CongratulatoryMoney = () => {
       >
         <Title> 마음 전하실 곳</Title>
       </Divider>
-      
+
       <Content data-aos="fade-up">
         
       </Content>
