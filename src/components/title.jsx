@@ -19,7 +19,7 @@ const Layout = styled.div`
 const TitleWrapper = styled.div`
   width: 100%;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
   font-family: "nanum_dahang";
   font-weight: 500 !important;
   color: var(--title-color);
@@ -37,7 +37,7 @@ const VideoBackground = styled.video`
 const WeddingInvitation = styled.p`
   font-size: 1.8rem;
   opacity: 0.45;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 `;
 
 const GroomBride = styled.p`
@@ -54,7 +54,7 @@ const Schedule = styled.p`
   font-weight: bold;
   font-size: 1.5rem;
   opacity: 0.7;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   color: #777;
 `;
 
@@ -64,7 +64,7 @@ const Schedule2 = styled.p`
   font-weight: bold;
   font-size: 1.8rem;
   opacity: 0.9;
-  margin-bottom: 26px;
+  margin-bottom: 15px;
 `;
 
 
