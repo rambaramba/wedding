@@ -95,8 +95,6 @@ const IndexPage = () => {
         }}
       >
         Copyright © 2024 Jeong Baraem
-        <br />
-        Music by Kwon Deukkeun
       </Footer>
     </Wrapper>
   );
