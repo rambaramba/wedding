@@ -13,7 +13,7 @@ import Location from "../components/location";
 import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
-import Song from "../assets/song.mp3";
+import Song from "../assets/song4.mp3";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const Buttons = styled.button`
-  background-color:  rgba(227, 161, 161, 0.3); /* 연핑크 색상에 투명도 추가 */
+  background-color: rgba(227, 161, 161, 0.3); /* 연핑크 색상에 투명도 추가 */
   color: #777; /* 회색 텍스트 */
   font-family: "nanum_dahang";
   border: none;
@@ -46,6 +46,12 @@ const Buttons = styled.button`
     background-color: rgba(227, 161, 161, 0.6); /* 클릭 시 핑크색 */
     transform: scale(0.95); /* 클릭 효과 */
   }
+`;
+
+const Text = styled.span`
+  margin-left: 10px; /* 버튼과 텍스트 사이의 간격 */
+  font-family: "nanum_dahang"; /* 텍스트 폰트 설정 */
+  color: #777; /* 텍스트 색상 */
 `;
 
 const IndexPage = () => {
@@ -76,9 +82,12 @@ const IndexPage = () => {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
-      <Buttons onClick={togglePlay}>
-        {isPlaying ?  "🎧 OFF" : "🎧 ON" }
-      </Buttons>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <Buttons onClick={togglePlay}>
+          {isPlaying ? "🎧 OFF" : "🎧 ON"}
+        </Buttons>
+        <Text>음악을 켜주세요</Text>
+      </div>
       <Title />
       <Greeting />
       <Gallery />
