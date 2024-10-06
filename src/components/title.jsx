@@ -7,7 +7,7 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.gif";
+import BackgroundVideo from "../assets/BackgroundVideo_1.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
 
 const Layout = styled.div`
@@ -88,7 +88,7 @@ const Title = () => {
         </GroomBride>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/gif" />
+        <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground>
       <TitleWrapper>
         <Schedule>
