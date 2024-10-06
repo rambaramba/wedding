@@ -86,7 +86,8 @@ const IndexPage = () => {
         <Buttons onClick={togglePlay}>
           {isPlaying ? "🎧 OFF" : "🎧 ON"}
         </Buttons>
-        <Text>음악을 켜주세요</Text>
+        <br />
+        <Text> 음악을 켜주세요 </Text>
       </div>
       <Title />
       <Greeting />
