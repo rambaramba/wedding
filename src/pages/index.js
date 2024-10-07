@@ -50,8 +50,10 @@ const Buttons = styled.button`
 
 const Text = styled.span`
   margin-left: 10px; /* 버튼과 텍스트 사이의 간격 */
-  font-family: "nanum_dahang"; /* 텍스트 폰트 설정 */
+  font-family: "nanum_dahang" ; /* 변경할 폰트 이름 */
   color: #777; /* 텍스트 색상 */
+  line-height: 1.5; /* 텍스트 위치 조정 */
+  margin-top: 5px; /* 버튼과 같은 라인으로 조정하기 위한 여백 */
 `;
 
 const IndexPage = () => {
@@ -82,12 +84,11 @@ const IndexPage = () => {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
         <Buttons onClick={togglePlay}>
           {isPlaying ? "🎧 OFF" : "🎧 ON"}
         </Buttons>
-        <br />
-        <Text> 음악을 켜주세요 </Text>
+        <Text>음악을 켜주세요</Text>
       </div>
       <Title />
       <Greeting />
