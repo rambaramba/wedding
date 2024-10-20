@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -13,12 +13,11 @@ import Location from "../components/location";
 import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
-import Song from "../assets/song.mp3";
+import Song from "../assets/song4.mp3";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// markup
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
@@ -27,34 +26,76 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const IndexPage = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://https://github.com/rambaramba";
-    document.body.appendChild(script);
+const Buttons = styled.button`
+  background-color: rgba(227, 161, 161, 0.3); /* 연핑크 색상에 투명도 추가 */
+  color: #777; /* 회색 텍스트 */
+  font-family: "nanum_dahang";
+  border: none;
+  border-radius: 50px; /* 타원형으로 만들기 */
+  padding: 5px 15px; /* 패딩 조정하여 버튼 크기 줄이기 */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px; /* 버튼을 아래로 내리기 */
+  margin-left: 10px; /* 왼쪽에서 띄우기 */
 
-    return () => {
-      document.body.romoveChile(script);
-    };
-  }, []);
+  &:hover {
+    background-color: rgba(227, 161, 161, 0.6);  /* 호버 시 조금 더 진한 핑크색 */
+  }
+
+  &:active {
+    background-color: rgba(227, 161, 161, 0.6); /* 클릭 시 핑크색 */
+    transform: scale(0.95); /* 클릭 효과 */
+  }
+`;
+
+const Text = styled.span`
+  margin-left: 10px; /* 버튼과 텍스트 사이의 간격 */
+  font-family: "nanum_dahang" ; /* 변경할 폰트 이름 */
+  color: #777; /* 텍스트 색상 */
+  line-height: 4; /* 텍스트 위치 조정 */
+  margin-top: 5px; /* 버튼과 같은 라인으로 조정하기 위한 여백 */
+`;
+
+const IndexPage = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = React.useRef(null);
+
+  const togglePlay = () => {
+    if (!isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+    setIsPlaying(!isPlaying);
+  };
 
   useEffect(() => {
     AOS.init({
       duration: 1500,
     });
-  });
+  }, []);
+
   return (
     <Wrapper>
-      <audio autoPlay loop>
-        <source src={Song} />
-      </audio>
+      <audio
+        ref={audioRef}
+        src={Song}
+        loop
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      />
+      <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+        <Buttons onClick={togglePlay}>
+          {isPlaying ? "🎧 OFF" : "🎧 ON"}
+        </Buttons>
+        <Text>음악을 켜주세요</Text>
+      </div>
       <Title />
       <Greeting />
       <Gallery />
       <Location />
-      <Quote />
       <CongratulatoryMoney />
+      <Quote />
       <Share />
       <Footer
         style={{

@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-family: "nanum_hipi" !important;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -29,22 +29,25 @@ const Title = styled.p`
 
 const Content = styled.p`
   font-family: "nanum_lefthand"  !important;
-  font-size: 1.3 rem;
+  font-size: 1.1 rem;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.85;
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
+  color: #777;
 `;
 
 const GroomBride = styled.p`
   font-family: "mom_to_daughter" !important;
   font-size: 1.5rem;
   line-height: 1.75;
-  opacity: 0.85;
+  opacity: 0.95;
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
+  font-weight: bold ;  
+  color: #777;
 `;
 
 const Image = styled.img`
@@ -68,13 +71,16 @@ const Greeting = () => {
         하나 되어 미래를 같이하기로 약속했습니다.
         <br />
         <br />
-        각자의 일상을 존중하고 보듬어주며 살아가겠습니다.
+        각자의 일상을 존중하고
         <br />
         <br />
+        보듬어주며 살아가겠습니다.
+        <br />
+        <br />        
         곁에서 늘 아껴주신 여러분들이,
         <br />
         <br />
-        저희의 새로운 시작을 축복해 주시면 
+        저희의 새로운 시작을 축복해 주시면
         <br />
         <br />
         더 할 나위 없는 기쁨이겠습니다.
